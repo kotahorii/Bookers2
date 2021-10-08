@@ -12,6 +12,12 @@ class BooksController < ApplicationController
     redirect_to book_path(current_user.id)
   end
 
+  def show
+    @book = Book.find(params[:id])
+    @book = Book.new
+    @user = User.find(params[:id])
+  end
+
   private
 
   def book_params
