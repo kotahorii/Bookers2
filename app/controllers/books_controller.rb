@@ -18,6 +18,9 @@ class BooksController < ApplicationController
     @user = User.find(@book.user_id)
   end
 
+  def update
+  end
+
   private
 
   def book_params
