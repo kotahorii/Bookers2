@@ -77,7 +77,7 @@
 </header>
   <main>
     <% flash.each do |key, value| %>
-    <%= content_tag(:div, value, class: "#{key}") %>
+    <%= content_tag(:p, value, id: "#{key}") %>
   <% end %>
     <%= yield %>
   </main>
